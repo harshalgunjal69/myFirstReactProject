@@ -1,0 +1,64 @@
+.translucent {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-effect * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+.hover-effect li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: outside none none;
+    padding: 0.3rem 0.5rem;
+}
+
+.hover-effect a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+
+.hover-effect a::before,
+.hover-effect a::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+.hover-effect a::before {
+    content: "";
+    right: 0;
+    top: 0;
+    border-top: 3px solid #acddde;
+    border-right: 3px solid #acddde;
+    transform: translate(-100%, 50%);
+}
+
+.hover-effect a:after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #acddde;
+    border-left: 3px solid #acddde;
+    transform: translate(100%, -50%);
+}
+
+.hover-effect a:hover:before,
+.hover-effect a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.hover-effect a:hover {
+    color: #fff;
+}
+

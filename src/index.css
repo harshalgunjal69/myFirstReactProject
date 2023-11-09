@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg_gradient {
+    background: -moz-radial-gradient(circle at 12.3% 19.3%, rgb(21, 25, 146) 0%, rgb(0, 107, 147) 100.2%);
+
+    background: -webkit-radial-gradient(circle at 12.3% 19.3%, rgb(21, 25, 146) 0%, rgb(0, 107, 147) 100.2%);
+
+    background: -o-radial-gradient(circle at 12.3% 19.3%, rgb(21, 25, 146) 0%, rgb(0, 107, 147) 100.2%);
+
+    background: -ms-radial-gradient(circle at 12.3% 19.3%, rgb(21, 25, 146) 0%, rgb(0, 107, 147) 100.2%);
+
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(21, 25, 146) 0%, rgb(0, 107, 147) 100.2%);
+}
+
+
